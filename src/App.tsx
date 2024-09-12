@@ -93,7 +93,7 @@ export default function App(){
 
         <div className='header'>
           <h2 className='title'> Lista de Tarefas </h2>
-          { totalTarefas <= 1 && <h3 className='contador'> Você tem {totalTarefas} tarefa pendente </h3> }
+          { totalTarefas > 0 && totalTarefas < 2 && <h3 className='contador'> Você tem {totalTarefas} tarefa pendente </h3> }
           { totalTarefas > 1 && <h3 className='contador'> Você tem {totalTarefas} tarefas pendentes </h3> }
         </div>
         
